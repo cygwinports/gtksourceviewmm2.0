@@ -1,0 +1,17 @@
+--- origsrc/gtksourceviewmm-2.2.0/docs/reference/Makefile.am	2007-12-09 10:58:02.000000000 -0600
++++ src/gtksourceviewmm-2.2.0/docs/reference/Makefile.am	2008-12-15 19:18:13.243875000 -0600
+@@ -5,10 +5,10 @@
+ 	rm -rf html
+ 	$(doxygenprog) $(doxyfile)
+ 
+-htmlfiles=$(shell ls -1 html/*.html)
+-pngfiles=$(shell ls -1 html/*.png)
+-giffiles=$(shell ls -1 html/*.gif)
+-cssfiles=$(shell ls -1 html/*.css)
++htmlfiles=$(shell ls -1 $(srcdir)/html/*.html)
++pngfiles=$(shell ls -1 $(srcdir)/html/*.png)
++giffiles=$(shell ls -1 $(srcdir)/html/*.gif)
++cssfiles=$(shell ls -1 $(srcdir)/html/*.css)
+ websitefiles=reference-index.txt
+ 
+ docdir = $(datadir)/doc/libgtksourceviewmm-2.0/docs

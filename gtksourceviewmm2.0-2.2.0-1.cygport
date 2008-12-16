@@ -1,0 +1,7 @@
+inherit gtkmm
+
+PATCH_URI="2.2-doxygen-vpath.patch"
+
+PKG_NAMES="${PN} lib${PN}_2 lib${PN}-devel"
+libgtksourceviewmm2_0_2_CONTENTS="usr/bin/*-2.0-2.dll usr/share/doc/Cygwin/ usr/share/doc/${P}/"
+libgtksourceviewmm2_0_devel_CONTENTS="usr/include/ usr/lib/ usr/share/doc/libgtksourceviewmm-2.0/"
