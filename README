@@ -4,25 +4,27 @@ C++ bindings for the GtkSourceView2 library.
 
 Runtime requirements:
   cygwin-1.5.25-15
-  libatkmm1.6_1-2.14.3-1
-  libglib2.0_0-2.18.3-1
-  libglibmm2.4_1-2.18.1-1
-  libgtk2.0_0-2.14.5-1
-  libgtkmm2.4_1-2.14.3-1
-  libgtksourceview2.0_0-2.4.1-1
-  libsigc2.0_0-2.2.3-1
+  libatkmm1.6_1-2.16.0-1
+  libgcc1-4.3.2-2
+  libglib2.0_0-2.20.0-1
+  libglibmm2.4_1-2.20.0-1
+  libgtk2.0_0-2.16.0-1
+  libgtkmm2.4_1-2.16.0-1
+  libgtksourceview2.0_0-2.6.0-1
+  libsigc2.0_0-2.2.3-10
+  libstdc++6-4.3.2-2
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.9-1.9.6-3
+  autoconf2.5-2.63-10
+  automake1.9-1.9.6-10
   binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gcc-g++-3.4.4-3
-  libtool-2.2.6a-1
-  make-3.81-1
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gcc4-g++-4.3.2-2
+  libtool-2.2.7a-1
+  make-3.81-2
   pkg-config-0.23a-2
   sed-4.1.5-2
 
@@ -35,16 +37,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gtksourceviewmm2.0-2.2.0-X-src.tar.bz2
+  unpack gtksourceviewmm2.0-2.3.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gtksourceviewmm2.0-2.2.0-X.cygport all
+  cygport ./gtksourceviewmm2.0-2.3.1-X.cygport all
 
 This will create:
-  /usr/src/gtksourceviewmm2.0-2.2.0-X-src.tar.bz2
-  /usr/src/libgtksourceviewmm2.0-devel-2.2.0-X.tar.bz2
-  /usr/src/libgtksourceviewmm2.0_2-2.2.0-X.tar.bz2
+  /usr/src/gtksourceviewmm2.0-2.3.1-X-src.tar.bz2
+  /usr/src/libgtksourceviewmm2.0-devel-2.3.1-X.tar.bz2
+  /usr/src/libgtksourceviewmm2.0_2-2.3.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -52,12 +54,11 @@ Files included in the binary packages:
 
 (libgtksourceviewmm2.0_2)
   /usr/bin/cyggtksourceviewmm-2.0-2.dll
-  /usr/share/doc/gtksourceviewmm2.0-2.2.0/AUTHORS
-  /usr/share/doc/gtksourceviewmm2.0-2.2.0/COPYING
-  /usr/share/doc/gtksourceviewmm2.0-2.2.0/ChangeLog
-  /usr/share/doc/gtksourceviewmm2.0-2.2.0/INSTALL
-  /usr/share/doc/gtksourceviewmm2.0-2.2.0/NEWS
-  /usr/share/doc/gtksourceviewmm2.0-2.2.0/README
+  /usr/share/doc/gtksourceviewmm2.0/AUTHORS
+  /usr/share/doc/gtksourceviewmm2.0/COPYING
+  /usr/share/doc/gtksourceviewmm2.0/ChangeLog
+  /usr/share/doc/gtksourceviewmm2.0/NEWS
+  /usr/share/doc/gtksourceviewmm2.0/README
 
 (libgtksourceviewmm2.0-devel)
   /usr/include/gtksourceviewmm-2.0/gtksourceviewmm.h
@@ -90,7 +91,6 @@ Files included in the binary packages:
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/annotated.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classGlib_1_1Value_3_01gtksourceview_1_1SourceSmartHomeEndType_01_4-members.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classGlib_1_1Value_3_01gtksourceview_1_1SourceSmartHomeEndType_01_4.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classGlib_1_1Value_3_01gtksourceview_1_1SourceTagStyle_01_4.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classgtksourceview_1_1SourceBuffer-members.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classgtksourceview_1_1SourceBuffer.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classgtksourceview_1_1SourceIter-members.html
@@ -107,12 +107,6 @@ Files included in the binary packages:
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classgtksourceview_1_1SourceStyleScheme.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classgtksourceview_1_1SourceStyleSchemeManager-members.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classgtksourceview_1_1SourceStyleSchemeManager.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classgtksourceview_1_1SourceTag-members.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classgtksourceview_1_1SourceTag.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classgtksourceview_1_1SourceTagStyle-members.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classgtksourceview_1_1SourceTagStyle.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classgtksourceview_1_1SourceTagTable-members.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classgtksourceview_1_1SourceTagTable.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classgtksourceview_1_1SourceView-members.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classgtksourceview_1_1SourceView.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/doxygen.css
@@ -125,7 +119,6 @@ Files included in the binary packages:
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_0x66.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_0x67.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_0x6e.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_0x6f.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_0x70.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_0x72.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_0x73.html
@@ -140,7 +133,6 @@ Files included in the binary packages:
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_func_0x66.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_func_0x67.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_func_0x6e.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_func_0x6f.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_func_0x70.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_func_0x72.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_func_0x73.html
@@ -150,7 +142,6 @@ Files included in the binary packages:
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_func_0x7e.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_rela.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_type.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_vars.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/globals.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/globals_type.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/group__gtksourceviewmmEnums.html
@@ -165,8 +156,6 @@ Files included in the binary packages:
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/namespacemembers_eval.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/namespacemembers_func.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/namespaces.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/pages.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/patternpage.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/reference-index_8txt.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcebuffer_8h-source.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcebuffer_8h.html
@@ -176,8 +165,6 @@ Files included in the binary packages:
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcelanguage_8h.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcelanguagemanager_8h-source.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcelanguagemanager_8h.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcelanguagesmanager_8h-source.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcelanguagesmanager_8h.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcemark_8h-source.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcemark_8h.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcestyle_8h-source.html
@@ -186,12 +173,6 @@ Files included in the binary packages:
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcestylescheme_8h.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcestyleschememanager_8h-source.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcestyleschememanager_8h.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcetag_8h-source.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcetag_8h.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcetagstyle_8h-source.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcetagstyle_8h.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcetagtable_8h-source.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcetagtable_8h.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourceview_8h-source.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourceview_8h.html
   /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/tab_b.gif
@@ -205,8 +186,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 2.2.0-2 -----
-Initial release of 2.0 branch for Cygwin.
+----- version 2.3.1-1 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
