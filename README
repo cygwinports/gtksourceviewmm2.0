@@ -3,30 +3,32 @@ gtksourceviewmm2.0
 C++ bindings for the GtkSourceView2 library.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libatkmm1.6_1-2.16.0-1
-  libgcc1-4.3.2-2
-  libglib2.0_0-2.20.0-1
-  libglibmm2.4_1-2.20.0-1
-  libgtk2.0_0-2.16.0-1
-  libgtkmm2.4_1-2.16.0-1
-  libgtksourceview2.0_0-2.6.0-1
-  libsigc2.0_0-2.2.3-10
-  libstdc++6-4.3.2-2
+  cygwin-1.7.7-1
+  libatkmm1.6_1-2.20.3-1
+  libgcc1-4.5.0-1
+  libglib2.0_0-2.24.1-1
+  libglibmm2.4_1-2.24.2-1
+  libgtk2.0_0-2.20.1-1
+  libgtkmm2.4_1-2.20.3-1
+  libgtksourceview2.0_0-2.10.4-1
+  libpangomm1.4_1-2.26.2-1
+  libsigc2.0_0-2.2.8-1
+  libstdc++6-4.5.0-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-10
-  automake1.9-1.9.6-10
-  binutils-20080624-2
-  cygport-0.9.6-1
-  gawk-3.1.6-2
-  gcc4-core-4.3.2-2
-  gcc4-g++-4.3.2-2
-  libtool-2.2.7a-1
+  autoconf2.5-2.65-1
+  automake1.11-1.11.1-1
+  binutils-2.20.51-2
+  cygport-0.10.0-1
+  gawk-3.1.7-1
+  gcc4-core-4.5.0-1
+  gcc4-g++-4.5.0-1
+  libtool-2.2.7a-15
   make-3.81-2
-  pkg-config-0.23a-2
-  sed-4.1.5-2
+  mm-common-0.9.2-1
+  pkg-config-0.23b-10
+  sed-4.2.1-1
 
 Canonical website:
   http://www.gtkmm.org/
@@ -37,154 +39,23 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gtksourceviewmm2.0-2.3.1-X-src.tar.bz2
+  unpack gtksourceviewmm2.0-2.10.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gtksourceviewmm2.0-2.3.1-X.cygport all
+  cygport ./gtksourceviewmm2.0-2.10.1-X.cygport all
 
 This will create:
-  /usr/src/gtksourceviewmm2.0-2.3.1-X-src.tar.bz2
-  /usr/src/libgtksourceviewmm2.0-devel-2.3.1-X.tar.bz2
-  /usr/src/libgtksourceviewmm2.0_2-2.3.1-X.tar.bz2
+  /usr/src/gtksourceviewmm2.0-2.10.1-X-src.tar.bz2
+  /usr/src/libgtksourceviewmm2.0-devel-2.10.1-X.tar.bz2
+  /usr/src/libgtksourceviewmm2.0_2-2.10.1-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary packages:
-
-(libgtksourceviewmm2.0_2)
-  /usr/bin/cyggtksourceviewmm-2.0-2.dll
-  /usr/share/doc/gtksourceviewmm2.0/AUTHORS
-  /usr/share/doc/gtksourceviewmm2.0/COPYING
-  /usr/share/doc/gtksourceviewmm2.0/ChangeLog
-  /usr/share/doc/gtksourceviewmm2.0/NEWS
-  /usr/share/doc/gtksourceviewmm2.0/README
-
-(libgtksourceviewmm2.0-devel)
-  /usr/include/gtksourceviewmm-2.0/gtksourceviewmm.h
-  /usr/include/gtksourceviewmm-2.0/gtksourceviewmm/init.h
-  /usr/include/gtksourceviewmm-2.0/gtksourceviewmm/private/sourcebuffer_p.h
-  /usr/include/gtksourceviewmm-2.0/gtksourceviewmm/private/sourceiter_p.h
-  /usr/include/gtksourceviewmm-2.0/gtksourceviewmm/private/sourcelanguage_p.h
-  /usr/include/gtksourceviewmm-2.0/gtksourceviewmm/private/sourcelanguagemanager_p.h
-  /usr/include/gtksourceviewmm-2.0/gtksourceviewmm/private/sourcemark_p.h
-  /usr/include/gtksourceviewmm-2.0/gtksourceviewmm/private/sourcestyle_p.h
-  /usr/include/gtksourceviewmm-2.0/gtksourceviewmm/private/sourcestylescheme_p.h
-  /usr/include/gtksourceviewmm-2.0/gtksourceviewmm/private/sourcestyleschememanager_p.h
-  /usr/include/gtksourceviewmm-2.0/gtksourceviewmm/private/sourceview_p.h
-  /usr/include/gtksourceviewmm-2.0/gtksourceviewmm/sourcebuffer.h
-  /usr/include/gtksourceviewmm-2.0/gtksourceviewmm/sourceiter.h
-  /usr/include/gtksourceviewmm-2.0/gtksourceviewmm/sourcelanguage.h
-  /usr/include/gtksourceviewmm-2.0/gtksourceviewmm/sourcelanguagemanager.h
-  /usr/include/gtksourceviewmm-2.0/gtksourceviewmm/sourcemark.h
-  /usr/include/gtksourceviewmm-2.0/gtksourceviewmm/sourcestyle.h
-  /usr/include/gtksourceviewmm-2.0/gtksourceviewmm/sourcestylescheme.h
-  /usr/include/gtksourceviewmm-2.0/gtksourceviewmm/sourcestyleschememanager.h
-  /usr/include/gtksourceviewmm-2.0/gtksourceviewmm/sourceview.h
-  /usr/include/gtksourceviewmm-2.0/gtksourceviewmm/wrap_init.h
-  /usr/lib/gtksourceviewmm-2.0/include/gtksourceviewmmconfig.h
-  /usr/lib/gtksourceviewmm-2.0/proc/m4/convert.m4
-  /usr/lib/gtksourceviewmm-2.0/proc/m4/convert_gtksourceviewmm.m4
-  /usr/lib/libgtksourceviewmm-2.0.dll.a
-  /usr/lib/libgtksourceviewmm-2.0.la
-  /usr/lib/pkgconfig/gtksourceviewmm-2.0.pc
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/annotated.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classGlib_1_1Value_3_01gtksourceview_1_1SourceSmartHomeEndType_01_4-members.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classGlib_1_1Value_3_01gtksourceview_1_1SourceSmartHomeEndType_01_4.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classgtksourceview_1_1SourceBuffer-members.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classgtksourceview_1_1SourceBuffer.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classgtksourceview_1_1SourceIter-members.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classgtksourceview_1_1SourceIter.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classgtksourceview_1_1SourceLanguage-members.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classgtksourceview_1_1SourceLanguage.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classgtksourceview_1_1SourceLanguageManager-members.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classgtksourceview_1_1SourceLanguageManager.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classgtksourceview_1_1SourceMark-members.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classgtksourceview_1_1SourceMark.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classgtksourceview_1_1SourceStyle-members.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classgtksourceview_1_1SourceStyle.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classgtksourceview_1_1SourceStyleScheme-members.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classgtksourceview_1_1SourceStyleScheme.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classgtksourceview_1_1SourceStyleSchemeManager-members.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classgtksourceview_1_1SourceStyleSchemeManager.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classgtksourceview_1_1SourceView-members.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/classgtksourceview_1_1SourceView.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/doxygen.css
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/doxygen.png
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/files.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_0x62.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_0x63.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_0x65.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_0x66.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_0x67.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_0x6e.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_0x70.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_0x72.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_0x73.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_0x75.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_0x76.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_0x77.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_0x7e.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_func.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_func_0x62.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_func_0x63.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_func_0x65.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_func_0x66.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_func_0x67.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_func_0x6e.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_func_0x70.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_func_0x72.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_func_0x73.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_func_0x75.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_func_0x76.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_func_0x77.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_func_0x7e.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_rela.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/functions_type.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/globals.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/globals_type.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/group__gtksourceviewmmEnums.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/index.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/init_8h-source.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/init_8h.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/modules.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/namespaceGlib.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/namespacegtksourceview.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/namespacemembers.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/namespacemembers_enum.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/namespacemembers_eval.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/namespacemembers_func.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/namespaces.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/reference-index_8txt.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcebuffer_8h-source.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcebuffer_8h.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourceiter_8h-source.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourceiter_8h.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcelanguage_8h-source.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcelanguage_8h.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcelanguagemanager_8h-source.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcelanguagemanager_8h.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcemark_8h-source.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcemark_8h.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcestyle_8h-source.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcestyle_8h.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcestylescheme_8h-source.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcestylescheme_8h.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcestyleschememanager_8h-source.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourcestyleschememanager_8h.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourceview_8h-source.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/sourceview_8h.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/tab_b.gif
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/tab_l.gif
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/tab_r.gif
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/tabs.css
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/wrap__init_8h-source.html
-  /usr/share/doc/libgtksourceviewmm-2.0/docs/reference/html/wrap__init_8h.html
-
-------------------
-
 Port Notes:
+
+----- version 2.10.1-1 -----
+Version bump.
 
 ----- version 2.3.1-1 -----
 Initial release for Cygwin 1.7.
