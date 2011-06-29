@@ -1,6 +1,6 @@
 inherit gtkmm
 
-PKG_NAMES="${PN} lib${PN}_2 lib${PN}-devel"
-libgtksourceviewmm2_0_2_CONTENTS="usr/bin/*-2.0-2.dll usr/share/doc/Cygwin/ usr/share/doc/${PN}/"
+PKG_NAMES="lib${PN}_2 lib${PN}-devel"
+libgtksourceviewmm2_0_2_CONTENTS="usr/bin/*-2.0-2.dll usr/share/doc/${PN}/"
 libgtksourceviewmm2_0_devel_CONTENTS="usr/include/ usr/lib/ usr/share/devhelp/
                                       usr/share/doc/gtksourceviewmm-2.0/"
